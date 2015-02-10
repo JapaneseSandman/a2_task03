@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT authors (parser.author+)>
+<!-- parser.author information -->
+<!ELEMENT parser.author (name,
+born-died,nationality,biography,artworks+)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT born-died (#PCDATA)>
+<!ELEMENT nationality (#PCDATA)>
+<!ELEMENT biography (#PCDATA)>
+<!ELEMENT artworks (artwork+)>
+<!ATTLIST artworks form CDATA #REQUIRED>
+<!-- artwork information -->
+<!ELEMENT artwork (title, technique, location)>
+<!ATTLIST artwork date CDATA #REQUIRED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT technique (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
